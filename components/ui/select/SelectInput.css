@@ -1,0 +1,41 @@
+@reference "../../../app/globals.css";
+
+.select-input-label {
+    @apply mb-1 block text-sm font-medium text-gray-700;
+}
+
+.select-input-label.has-error {
+    @apply text-red-600;
+}
+
+
+/* Select control */
+.select-container .select__control {
+    min-height: 42px;
+    border-radius: 0.375rem;
+    border-color: #d1d5db;
+    box-shadow: none;
+}
+
+/* Focused control */
+.select-container .select__control--is-focused {
+    border-color: #2563eb;
+    box-shadow: none;
+}
+
+/* Hover state */
+.select-container .select__control:hover {
+    border-color: #9ca3af;
+}
+
+/* Error state */
+.select-container.has-error .select__control,
+.select-container.has-error .select__control:hover,
+.select-container.has-error .select__control--is-focused {
+    border-color: #dc2626;
+    box-shadow: none;
+}
+
+.select-input-error {
+  @apply mt-1 text-sm text-red-600;
+}

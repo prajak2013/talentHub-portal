@@ -1,0 +1,33 @@
+/* @reference "../../app/globals.css"; */
+@reference "../../../app/globals.css";
+.btn {
+  @apply inline-flex items-center justify-center gap-2
+    rounded-lg px-4 py-2.5 text-sm font-medium
+    transition-colors duration-200
+    disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-100 text-gray-900 hover:bg-gray-200;
+}
+
+.btn-danger {
+  @apply bg-red-600 text-white hover:bg-red-700;
+}
+.btn-password-toggle {
+    position: absolute;
+    top: 0;
+    right: 0.75rem;
+    bottom: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #4f46e5;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
